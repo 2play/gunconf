@@ -15,7 +15,9 @@ Written in python on top of pygame, it **does not require an x server.**
 ## Prerequisites
 
 `sudo apt -y install apt-transport-https python3-dev python3-pygame python3-setuptools
-pip3 install git+https://github.com/parogers/pgu.git`
+sudo pip3 install --upgrade pip setuptools wheel
+sudo pip3 install git+https://github.com/parogers/pgu.git
+`
 
 ## Get the source
 `git clone https://github.com/2play/gunconf`
