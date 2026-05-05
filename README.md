@@ -14,15 +14,20 @@ Written in python on top of pygame, it **does not require an x server.**
 # Install
 ## Prerequisites
 
-`sudo apt install apt-transport-https python-dev python-pygame python-setuptools`
+`sudo apt -y install apt-transport-https python3-dev python3-pygame python3-setuptools
+pip3 install git+https://github.com/parogers/pgu.git`
 
 ## Get the source
-`git clone https://github.com/gunpadawan/gunconf`
+`git clone https://github.com/2play/gunconf`
 
 ## Install python module
 `cd gunconf`
 
-`sudo python setup.py install`
+Preferred install
+`pip3 install .`
+
+Older install with new python3
+`sudo python3 setup.py install`
 
 ## Udev rules
 Application requires access to the aimtrak usb device. It is usually necessary to configure udev to let your specific user access that device.
@@ -37,9 +42,9 @@ To let any user access the device, do:
 ## Launch
 To launch application, you can execute `utils/gunconf.sh`
 
-For retropie users, you can add the app to the retropie menu by simply copying that file:
+For PlayBox users, you can add the app to the retropie menu by simply copying that file (Optional as its done automatically via PlayBox Toolkit):
 
-`sudo cp utils/gunconf.sh /home/pi/RetroPie/retropiemenu/`
+`cp ~/PlayBox-Setup/.pb-fixes/retropiemenu/Controller Tools/LightGunConf.sh "~/RetroPie/retropiemenu/Controller Tools/`
 
 
 # [Advancemame](http://www.advancemame.it/download)
