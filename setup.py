@@ -40,7 +40,7 @@ setup(
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=['evdev>=0.6.4',
                       'pyusb>=1.0.0',
-                      'pgu>=0.18',
+                      'pygame-pgu>=0.18',
                       'pyudev>=0.21'],
 
     dependency_links = [
